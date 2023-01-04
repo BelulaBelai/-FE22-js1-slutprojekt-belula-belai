@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>JS1 - Slutprojekt</title>
+
+    <script src="./js/anime.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+
+  </head>
+  <body>
+    <div id="search-section">
+      <form>
+        <div class="search-inputs">
+          <p>Write any text to find photos related to it:</p>
+          <input
+            id="text-input"
+            class="search-inputs"
+            type="text"
+            placeholder=" Search text here..."
+          />
+        </div>
+
+        <div class="search-inputs">
+          <p>Sort photos by:</p>
+          <select id="sort-input">
+            <option value="date-posted-desc">Date</option>
+            <option value="relevance">Relevance</option>
+            <option value="interestingness-desc">Interestingness</option>
+          </select>
+        </div>
+
+        <div class="search-inputs">
+          <p>Choose photo-size:</p>
+          <select id="size-input">
+            <option value="n">Small</option>
+            <option value="z">Medium</option>
+            <option value="b">Large</option>
+          </select>
+        </div>
+
+        <div class="search-inputs">
+          <p>Choose amount of photos to display:</p>
+          <select name="number" id="img-quantity">
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>
+            <option value="500">500</option>
+          </select>
+        </div>
+
+        <button id="form-button" class="search-inputs">Search photos!</button>
+      </form>
+    </div>
+
+    <main id="img-section">
+      <h1>Flickr photo gallery</h1>
+
+      <h2 class="error-messages" id="text-input-error">
+        Error! Please fill in the search bar.
+      </h2>
+      <h2 class="error-messages" id="zero-images-error">
+        Error! No photos could be found, try another search.
+      </h2>
+      <h2 class="error-messages" id="random-error">
+        Error! Something went wrong, try again later.
+      </h2>
+
+      <div id="img-container"></div>
+
+      <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
+    </main>
+  </body>
+</html>

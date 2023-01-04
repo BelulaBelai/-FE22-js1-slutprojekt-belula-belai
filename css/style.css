@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(27, 25, 25);
+  color: whitesmoke;
+  letter-spacing: 1px;
+  height: 100%;
+  width: 100%;
+}
+
+#search-section {
+  display: flex;
+  min-width: 33%;
+  max-width: 33%;
+  min-height: 100vh;
+  padding: 2rem;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(245, 240, 242);
+  padding: 1.5rem;
+  position: fixed;
+  min-height: 95%;
+}
+
+.search-inputs {
+  margin-top: 3rem;
+}
+
+option {
+  text-align: center;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 1rem;
+}
+
+#form-button {
+  padding: 1.5rem;
+  margin-top: 5rem;
+  border-radius: 15px;
+  width: 65%;
+  align-self: center;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+.error-messages {
+  color: red;
+  font-size: 2.5rem;
+  text-align: center;
+  display: none;
+}
+
+#text-input-error {
+  margin-left: 10%;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  width: 100vw;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+#img-section {
+  max-width: 65%;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+#img-container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-left: 2rem;
+  gap: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+#myProgress {
+  width: 30vw;
+  height: 3rem;
+  background-color: grey;
+  visibility: hidden;
+}
+
+#myBar {
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  background-color: green;
+  text-align: center;
+  line-height: 3rem;
+  color: white;
+}
